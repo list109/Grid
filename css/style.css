@@ -1,0 +1,153 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 72px;
+}
+h1 + p {
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 36px;
+}
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.container {
+    padding: 0 200px 0 210px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: [start] 900px [line-1] 500px [line-2] 515px [line-3] 500px [line-4] 514px [end];
+}
+.grid-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.grid-item-main {
+    grid-column: 1 / 5;
+    background-image: url(../img/bg-main.png);
+    padding: 280px 200px 0 210px;
+}
+
+.grid-item-main__box {
+    max-width: 640px;
+}
+
+.grid-item-main__box h1 {
+    margin-bottom: 45px;
+}
+
+.grid-item-main__box p {
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.grid-item-red {
+    grid-column: 1 / 3;
+    background-image: url(../img/bg-red.png);
+}
+.grid-item-lgray {
+    grid-column: 3 / 5;
+    padding-right: 290px;
+    padding: 115px 200px 115px 60px;
+    line-height: 1.2;
+    background-color: #f3f1ef;
+    color: #696969;
+}
+.grid-item-lgray h2 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.grid-item-pic1 {
+    background-image: url(../img/bg-one.png);
+}
+.grid-item-pic2 {
+    background-image: url(../img/bg-two.png);
+}
+.grid-item-pic3 {
+    background-image: url(../img/bg-three.png);
+}
+.grid-item-pic4 {
+    background-image: url(../img/bg-four.png);
+}
+.grid-item-blue-text {
+    grid-column: 1 / 3;
+}
+.grid-item-pic5 {
+    background-image: url(../img/bg-five.png);
+}
+.grid-item-blue {
+    background-color: #3f729b;
+    color: #fff;
+}
+.grid-item-green {
+    background-color: #2ebd59;
+    grid-column: 1 / 3;
+    color: #fff;
+}
+.grid-item-gray {
+    background-color: #282b2f;
+    grid-column: 3 / 5;
+    color: #fff;
+}
+
+.grid-item-blue h2,
+.grid-item-green h2,
+.grid-item-gray h2 {
+    margin-bottom: 40px;
+}
+
+.grid-item-blue a,
+.grid-item-green a,
+.grid-item-gray a {
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 40px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    padding: 20px 28px;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+.grid-item-blue a:hover,
+.grid-item-green a:hover,
+.grid-item-gray a:hover {
+    border-color: #adadad;
+    color: #c2bfbf;
+    transition: .3s;
+} 
+
+.grid-item-blue,
+.grid-item-green,
+.grid-item-gray {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.grid-item-blue,
+.grid-item-green {
+    padding-left: 210px;
+    padding-right: 110px;
+    
+}
+
+.grid-item-gray {
+    padding-left: 60px;
+    padding-right: 210px;
+}
